@@ -1,0 +1,264 @@
+/*limpando*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*variaveis*/
+:root {
+    --cor-principal: #D3F1DF;
+    --cor-secundaria: #5A6C57;
+    --cor-terciaria: #85A98F; 
+    --texto-principal: #313628; 
+    --texto-secundario: #effced;
+}
+
+/*pagina em geral*/
+body{
+    background-color: var(--cor-terciaria);
+}
+
+#tituloPagina {
+    color: var(--texto-secundario);
+    padding: 2%;
+    font-size: 48px;
+}
+
+#minhaFoto {
+    max-height: 200px;
+    max-width: 200px;
+    box-shadow: var(--texto-principal) 10px 10px;
+    margin-bottom: 5%;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 117px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--texto-secundario);
+    padding: 4%;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    text-align: center;
+    color: var(--texto-secundario);
+    padding: 0.3%;
+}
+
+/* Estilização da header e da nav*/
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: var(--texto-principal) solid 2px;
+    z-index: 1000;
+    top: 0;
+}
+
+#header {
+    background-color: var(--cor-principal);
+    padding-bottom: 1%;
+    padding-top: 1.2%;
+    text-align: center;
+}
+
+#Logo {
+    font-size: 32px;
+    color: var(--texto-principal);
+}
+
+#linkAtual {
+    color: var(--texto-principal); 
+    background-color: var(--cor-principal);
+}
+
+nav {
+    background-color: var(--cor-secundaria) ;
+    padding: 8px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--texto-secundario); 
+    text-decoration: none;  
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: var(--texto-principal); 
+    background-color: var(--cor-principal); 
+}
+
+/*Conteudo sobre mim*/
+
+#descPessoal {
+    max-width: 660px;
+    background-color: var(--cor-secundaria);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textoDesc {
+    background-color: var(--cor-principal);
+    padding: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--texto-principal);
+    border: var(--cor-terciaria) 2px solid;
+}
+
+#hobbies {
+    max-width: 660px;
+    background-color: var(--cor-secundaria);
+    padding: 1%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textHob {
+    background-color: var(--cor-principal);
+    padding: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--texto-principal);
+    border: var(--cor-terciaria) 2px solid;
+}
+
+/*Conteudo Portifolio*/
+
+#Experiencia {
+    max-width: 660px;
+    background-color: var(--cor-secundaria);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textExperiencia {
+    background-color: var(--cor-principal);
+    padding: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--texto-principal);
+    border: var(--cor-terciaria) 2px solid;
+}
+
+#linkTextos {
+    color: var(--texto-principal);
+}
+
+#Projetos {
+    max-width: 660px;
+    background-color: var(--cor-secundaria);
+    padding: 1%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textProjetos {
+    background-color: var(--cor-principal);
+    padding: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--texto-principal);
+    border: var(--cor-terciaria) 2px solid;
+}
+
+#divProjetos {
+    margin-top: 1%;
+    display: flex;
+    border-bottom: var(--texto-principal) solid 2px;
+    padding: 2%;
+}
+
+#imgProjetos {
+    margin-left: 1%;
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: var(--texto-principal) 10px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Conteudo Formacao*/
+
+#Formacões {
+    max-width: 660px;
+    background-color: var(--cor-secundaria);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemLista {
+    background-color: var(--cor-principal);
+    padding: 2%;
+    margin: 2%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--texto-principal);
+    border: var(--cor-terciaria) 2px solid;
+}
+
+/*Conteudo contato*/
+
+#contatos {
+    max-width: 660px;
+    background-color: var(--cor-secundaria);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-principal);
+    padding: 2%;
+    width: 105%;
+    margin: 2%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--texto-principal);
+    border: var(--cor-terciaria) 2px solid;
+}
+
+#imgContato {
+    height: 30px;
+    margin-right: 2%;
+}
+
+#textCont {
+    color: var(--texto-principal);
+}
+
+#linkCont {
+    color: var(--texto-secundario);
+    background-color: var(--cor-secundaria);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1%;
+}
